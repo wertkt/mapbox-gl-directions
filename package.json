@@ -13,7 +13,7 @@
     "mapbox-gl": "^0.41.0 <2.0.0"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "start": "NODE_ENV=development budo example/index.js:example/bundle.js --live",
     "build": "NODE_ENV=production mkdir -p dist && browserify -s MapboxDirections src/index.js > dist/mapbox-gl-directions.js && cp src/mapbox-gl-directions.css dist",
     "test": "NODE_ENV=test npm run lint && browserify test/index.js | smokestack -b firefox | tap-status",
