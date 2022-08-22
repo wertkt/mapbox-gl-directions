@@ -18,7 +18,7 @@ export default class Geocoder {
 
   onAdd(map) {
     this._map = map;
-    const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
     this.request = new XMLHttpRequest();
 
     // Template
