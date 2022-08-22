@@ -1,5 +1,6 @@
 import * as types from '../constants/action_types';
 import utils from '../utils';
+const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 const request = new XMLHttpRequest();
 
 function originPoint(coordinates) {
