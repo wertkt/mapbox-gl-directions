@@ -18,8 +18,8 @@ export default class Geocoder {
 
   onAdd(map) {
     this._map = map;
-
-    this.request = new XMLHttpRequest();
+    var XMLHttpRequest = require('xhr2')
+    this.request = XMLHttpRequest;
 
     // Template
     var el = document.createElement('div');
