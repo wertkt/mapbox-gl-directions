@@ -1,7 +1,8 @@
 import * as types from '../constants/action_types';
 import utils from '../utils';
-var xhr = require('xhr2')
-const request = xhr;
+
+var XMLHttpRequest = require('xhr2')
+const request = XMLHttpRequest;
 
 function originPoint(coordinates) {
   return (dispatch) => {
